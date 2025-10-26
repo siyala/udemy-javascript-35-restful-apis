@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Logs
 logs
 *.log
@@ -35,3 +36,6 @@ coverage/
 *.zip
 *.rar
 *.swp
+=======
+
+>>>>>>> 9eebc58aac9c1de039b55734d260a86703846aaf
