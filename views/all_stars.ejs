@@ -1,0 +1,33 @@
+
+
+<%- include('partials/head.ejs') %>
+<body>
+<%- include('partials/navbar.ejs') %>
+
+<div class="container">
+    <h1>Home Page - 10</h1>
+    <h1>Canadian All Stars - <%= "welcome".toUpperCase() %> </h1>
+    <h2>Your auth token is: token </h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae est tenetur magni rerum ex accusamus, architecto esse harum. Nulla, quas odit? Esse maxime debitis accusantium tempora possimus voluptate laudantium quia nam molestiae ipsam unde dolor optio iusto alias ab labore incidunt aperiam officia totam dolorum eos, soluta provident reiciendis vitae. Non quis eligendi qui veniam libero? Tempora impedit omnis laborum natus nulla officiis accusamus, beatae exercitationem porro perspiciatis labore quibusdam repudiandae distinctio dignissimos necessitatibus blanditiis culpa illo dolorem. Amet, enim.</p>
+    <h2>Now for some stockes</h2>
+
+
+    <ul>
+        <% for (let i=1; i < 4; i++ ) { %> 
+            <li> <%=  i  %> </li>
+        <% } %> 
+    </ul>
+
+    <h2>Loop over a set/array</h2>
+
+    <ul>
+    <% for (let stock of stocks) {  %>
+        <% if (stock == "tsx:bdt") { %>
+        <li> stock: <%= stock  %> </li>
+    <% } } %>
+    </ul>
+
+    <%= stocks %>
+<%- include('partials/footer.ejs') %>
+
+ </div>
